@@ -1,17 +1,18 @@
 
 import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore/lite';
+import { Timestamp, getFirestore } from 'firebase/firestore/lite';
 import { getAuth } from "firebase/auth";
 
+
 const firebaseConfig = {
-    apiKey: "AIzaSyB0HjLaW19LYZfEbZSwBzsld5qOZ3XcFxI",
-    authDomain: "expensify-a174e.firebaseapp.com",
-    projectId: "expensify-a174e",
-    storageBucket: "expensify-a174e.appspot.com",
-    messagingSenderId: "695687003734",
-    appId: "1:695687003734:web:ab5b1a14e47da1a0fb05f7",
-    measurementId: "G-RBY50763PN"
-  };
+  apiKey: "AIzaSyBfR89UoHZk7jVEfpK4wPTX9nU0MGvb6Oc",
+  authDomain: "expensify-94480.firebaseapp.com",
+  projectId: "expensify-94480",
+  storageBucket: "expensify-94480.appspot.com",
+  messagingSenderId: "63490883163",
+  appId: "1:63490883163:web:dea752a081dbf3b6c2897e",
+  measurementId: "G-0B1KYNDVD0"
+};
 
   // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -20,4 +21,9 @@ const app = initializeApp(firebaseConfig);
 const projectFirestore= getFirestore(app)
 const projectAuth=getAuth()
 
-export {projectFirestore,projectAuth}
+//timestamp
+// const timestamp=firebase.firestore.Timestamp 
+
+
+
+export {projectFirestore,projectAuth,Timestamp}
