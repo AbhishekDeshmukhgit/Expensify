@@ -1,6 +1,6 @@
 
 import { initializeApp } from 'firebase/app';
-import { Timestamp, getFirestore } from 'firebase/firestore/lite';
+import { Timestamp, getFirestore } from 'firebase/firestore/lite';  
 import { getAuth } from "firebase/auth";
 
 
